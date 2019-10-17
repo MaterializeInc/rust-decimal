@@ -1320,7 +1320,7 @@ fn to_from_sql() {
         "-18446744073709551615",
     ];
 
-    let t = Type::_new("".into(), 0, Kind::Simple, "".into());
+    let t = Type::NUMERIC;
 
     for test in tests {
         let input = Decimal::from_str(test).unwrap();
